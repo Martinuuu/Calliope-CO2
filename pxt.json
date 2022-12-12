@@ -1,0 +1,26 @@
+{
+    "name": "Messer",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "Grove": "github:calliope-edu/pxt-grove#v0.2.7",
+        "SCD30": "github:calliope-mini/pxt-SCD30#b286781b9e06bd20ea255525837469b8c2059171",
+        "pxt-esp-thingspeak": "github:MKleinSB/pxt-esp-thingspeak#v0.0.2"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "4.0.29",
+        "targetId": "calliopemini"
+    },
+    "supportedTargets": [
+        "calliopemini"
+    ],
+    "preferredEditor": "blocksprj"
+}
