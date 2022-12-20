@@ -3,14 +3,16 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "Grove": "github:calliope-edu/pxt-grove#v0.2.7",
         "SCD30": "github:calliope-mini/pxt-SCD30#b286781b9e06bd20ea255525837469b8c2059171",
-        "pxt-esp-thingspeak": "github:MKleinSB/pxt-esp-thingspeak#v0.0.2"
+        "pxt-esp-thingspeak": "github:MKleinSB/pxt-esp-thingspeak#v0.0.2",
+        "neopixel-calliope": "github:ud-edu/pxt-neopixel-calliope#v0.0.11",
+        "Grove": "github:ud-edu/pxt-grove#v0.5.0"
     },
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md"
+        "README.md",
+        "main.py"
     ],
     "testFiles": [
         "test.ts"
@@ -22,5 +24,22 @@
     "supportedTargets": [
         "calliopemini"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "pairing_mode": 1,
+                    "partial_flashing": 1,
+                    "dfu_service": 1,
+                    "event_service": 1,
+                    "device_info_service": 1
+                },
+                "stack_size": 2048,
+                "gatt_table_size": "0x800",
+                "sram_end": "0x20008000",
+                "RAM_SIZE": "\"32K\""
+            }
+        }
+    }
 }
